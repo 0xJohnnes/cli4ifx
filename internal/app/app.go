@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/db"
-	"github.com/opencode-ai/opencode/internal/format"
-	"github.com/opencode-ai/opencode/internal/history"
-	"github.com/opencode-ai/opencode/internal/llm/agent"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/db"
+	"https://github.com/0xJohnnes/cli4ifx/internal/format"
+	"https://github.com/0xJohnnes/cli4ifx/internal/history"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/agent"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/permission"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
 )
 
 type App struct {

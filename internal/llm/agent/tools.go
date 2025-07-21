@@ -3,12 +3,12 @@ package agent
 import (
 	"context"
 
-	"github.com/opencode-ai/opencode/internal/history"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/history"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/tools"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/permission"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
 )
 
 func CoderAgentTools(

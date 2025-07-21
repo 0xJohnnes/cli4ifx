@@ -8,13 +8,13 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/diff"
-	"github.com/opencode-ai/opencode/internal/history"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/diff"
+	"https://github.com/0xJohnnes/cli4ifx/internal/history"
+	"https://github.com/0xJohnnes/cli4ifx/internal/pubsub"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
 )
 
 type sidebarCmp struct {

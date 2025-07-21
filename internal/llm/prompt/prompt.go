@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
 )
 
 func GetAgentPrompt(agentName config.AgentName, provider models.ModelProvider) string {

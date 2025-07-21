@@ -12,11 +12,11 @@ import (
 	"github.com/anthropics/anthropic-sdk-go"
 	"github.com/anthropics/anthropic-sdk-go/bedrock"
 	"github.com/anthropics/anthropic-sdk-go/option"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	toolsPkg "github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	toolsPkg "https://github.com/0xJohnnes/cli4ifx/internal/llm/tools"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
 )
 
 type anthropicOptions struct {

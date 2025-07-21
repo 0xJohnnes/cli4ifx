@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp/protocol"
 )
 
 func DetectLanguageID(uri string) protocol.LanguageKind {

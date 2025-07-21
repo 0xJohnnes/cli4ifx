@@ -4,11 +4,11 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	utilComponents "github.com/opencode-ai/opencode/internal/tui/components/util"
-	"github.com/opencode-ai/opencode/internal/tui/layout"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	utilComponents "https://github.com/0xJohnnes/cli4ifx/internal/tui/components/util"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/layout"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/util"
 )
 
 // Command represents a command that can be executed

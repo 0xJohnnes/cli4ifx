@@ -5,8 +5,8 @@ import (
 	"database/sql"
 
 	"github.com/google/uuid"
-	"github.com/opencode-ai/opencode/internal/db"
-	"github.com/opencode-ai/opencode/internal/pubsub"
+	"https://github.com/0xJohnnes/cli4ifx/internal/db"
+	"https://github.com/0xJohnnes/cli4ifx/internal/pubsub"
 )
 
 type Session struct {

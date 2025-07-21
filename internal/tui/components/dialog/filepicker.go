@@ -14,14 +14,14 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/app"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/tui/image"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"https://github.com/0xJohnnes/cli4ifx/internal/app"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/image"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/util"
 )
 
 const (

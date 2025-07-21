@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/tools"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
 )
 
 type EventType string

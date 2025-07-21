@@ -7,16 +7,16 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/components/chat"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp/protocol"
+	"https://github.com/0xJohnnes/cli4ifx/internal/pubsub"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/components/chat"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/util"
 )
 
 type StatusCmp interface {

@@ -8,9 +8,9 @@ import (
 	"github.com/muesli/ansi"
 	"github.com/muesli/reflow/truncate"
 	"github.com/muesli/termenv"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/tui/util"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/util"
 )
 
 // Most of this code is borrowed from

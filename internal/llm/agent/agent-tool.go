@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/lsp"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/tools"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
 )
 
 type agentTool struct {

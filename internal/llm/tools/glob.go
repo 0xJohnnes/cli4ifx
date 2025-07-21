@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/fileutil"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/fileutil"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
 )
 
 const (

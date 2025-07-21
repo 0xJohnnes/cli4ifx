@@ -1,6 +1,6 @@
 package prompt
 
-import "github.com/opencode-ai/opencode/internal/llm/models"
+import "https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
 
 func TitlePrompt(_ models.ModelProvider) string {
 	return `you will generate a short title based on the first message a user begins a conversation with

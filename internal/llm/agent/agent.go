@@ -8,16 +8,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/llm/prompt"
-	"github.com/opencode-ai/opencode/internal/llm/provider"
-	"github.com/opencode-ai/opencode/internal/llm/tools"
-	"github.com/opencode-ai/opencode/internal/logging"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/permission"
-	"github.com/opencode-ai/opencode/internal/pubsub"
-	"github.com/opencode-ai/opencode/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/prompt"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/provider"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/tools"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/permission"
+	"https://github.com/0xJohnnes/cli4ifx/internal/pubsub"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
 )
 
 // Common errors

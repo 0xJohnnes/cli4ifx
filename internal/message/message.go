@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/opencode-ai/opencode/internal/db"
-	"github.com/opencode-ai/opencode/internal/llm/models"
-	"github.com/opencode-ai/opencode/internal/pubsub"
+	"https://github.com/0xJohnnes/cli4ifx/internal/db"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/pubsub"
 )
 
 type CreateMessageParams struct {

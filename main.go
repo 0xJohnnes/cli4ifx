@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/opencode-ai/opencode/cmd"
-	"github.com/opencode-ai/opencode/internal/logging"
+	"https://github.com/0xJohnnes/cli4ifx/cmd"
+	"https://github.com/0xJohnnes/cli4ifx/internal/logging"
 )
 
 func main() {

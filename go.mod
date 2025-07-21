@@ -1,4 +1,4 @@
-module github.com/opencode-ai/opencode
+module github.com/0xJohnnes/cli4ifx
 
 go 1.24.0
 

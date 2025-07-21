@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/opencode-ai/opencode/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
 )
 
 type PersistentShell struct {

@@ -6,12 +6,12 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/message"
-	"github.com/opencode-ai/opencode/internal/session"
-	"github.com/opencode-ai/opencode/internal/tui/styles"
-	"github.com/opencode-ai/opencode/internal/tui/theme"
-	"github.com/opencode-ai/opencode/internal/version"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/message"
+	"https://github.com/0xJohnnes/cli4ifx/internal/session"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/styles"
+	"https://github.com/0xJohnnes/cli4ifx/internal/tui/theme"
+	"https://github.com/0xJohnnes/cli4ifx/internal/version"
 )
 
 type SendMsg struct {
@@ -120,7 +120,7 @@ func logo(width int) string {
 }
 
 func repo(width int) string {
-	repo := "https://github.com/opencode-ai/opencode"
+	repo := "https://https://github.com/0xJohnnes/cli4ifx"
 	t := theme.CurrentTheme()
 
 	return styles.BaseStyle().

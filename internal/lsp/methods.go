@@ -4,7 +4,7 @@ package lsp
 import (
 	"context"
 
-	"github.com/opencode-ai/opencode/internal/lsp/protocol"
+	"https://github.com/0xJohnnes/cli4ifx/internal/lsp/protocol"
 )
 
 // Implementation sends a textDocument/implementation request to the LSP server.

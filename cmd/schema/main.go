@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opencode-ai/opencode/internal/config"
-	"github.com/opencode-ai/opencode/internal/llm/models"
+	"https://github.com/0xJohnnes/cli4ifx/internal/config"
+	"https://github.com/0xJohnnes/cli4ifx/internal/llm/models"
 )
 
 // JSONSchemaType represents a JSON Schema type
