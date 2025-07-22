@@ -64,11 +64,8 @@ type providerClientOptions struct {
 	maxTokens     int64
 	systemMessage string
 
-	anthropicOptions []AnthropicOption
-	openaiOptions    []OpenAIOption
-	geminiOptions    []GeminiOption
-	bedrockOptions   []BedrockOption
-	copilotOptions   []CopilotOption
+	openaiOptions   []OpenAIOption
+	infineonOptions []InfineonOption
 }
 
 type ProviderClientOption func(*providerClientOptions)
@@ -89,76 +86,15 @@ func NewProvider(providerName models.ModelProvider, opts ...ProviderClientOption
 		o(&clientOptions)
 	}
 	switch providerName {
-	case models.ProviderCopilot:
-		return &baseProvider[CopilotClient]{
-			options: clientOptions,
-			client:  newCopilotClient(clientOptions),
-		}, nil
-	case models.ProviderAnthropic:
-		return &baseProvider[AnthropicClient]{
-			options: clientOptions,
-			client:  newAnthropicClient(clientOptions),
-		}, nil
 	case models.ProviderOpenAI:
 		return &baseProvider[OpenAIClient]{
 			options: clientOptions,
 			client:  newOpenAIClient(clientOptions),
 		}, nil
-	case models.ProviderGemini:
-		return &baseProvider[GeminiClient]{
+	case models.ProviderInfineon:
+		return &baseProvider[InfineonClient]{
 			options: clientOptions,
-			client:  newGeminiClient(clientOptions),
-		}, nil
-	case models.ProviderBedrock:
-		return &baseProvider[BedrockClient]{
-			options: clientOptions,
-			client:  newBedrockClient(clientOptions),
-		}, nil
-	case models.ProviderGROQ:
-		clientOptions.openaiOptions = append(clientOptions.openaiOptions,
-			WithOpenAIBaseURL("https://api.groq.com/openai/v1"),
-		)
-		return &baseProvider[OpenAIClient]{
-			options: clientOptions,
-			client:  newOpenAIClient(clientOptions),
-		}, nil
-	case models.ProviderAzure:
-		return &baseProvider[AzureClient]{
-			options: clientOptions,
-			client:  newAzureClient(clientOptions),
-		}, nil
-	case models.ProviderVertexAI:
-		return &baseProvider[VertexAIClient]{
-			options: clientOptions,
-			client:  newVertexAIClient(clientOptions),
-		}, nil
-	case models.ProviderOpenRouter:
-		clientOptions.openaiOptions = append(clientOptions.openaiOptions,
-			WithOpenAIBaseURL("https://openrouter.ai/api/v1"),
-			WithOpenAIExtraHeaders(map[string]string{
-				"HTTP-Referer": "opencode.ai",
-				"X-Title":      "OpenCode",
-			}),
-		)
-		return &baseProvider[OpenAIClient]{
-			options: clientOptions,
-			client:  newOpenAIClient(clientOptions),
-		}, nil
-	case models.ProviderXAI:
-		clientOptions.openaiOptions = append(clientOptions.openaiOptions,
-			WithOpenAIBaseURL("https://api.x.ai/v1"),
-		)
-		return &baseProvider[OpenAIClient]{
-			options: clientOptions,
-			client:  newOpenAIClient(clientOptions),
-		}, nil
-	case models.ProviderLocal:
-		clientOptions.openaiOptions = append(clientOptions.openaiOptions,
-			WithOpenAIBaseURL(os.Getenv("LOCAL_ENDPOINT")),
-		)
-		return &baseProvider[OpenAIClient]{
-			options: clientOptions,
-			client:  newOpenAIClient(clientOptions),
+			client:  newInfineonClient(clientOptions),
 		}, nil
 	case models.ProviderMock:
 		// TODO: implement mock client for test
@@ -216,32 +152,14 @@ func WithSystemMessage(systemMessage string) ProviderClientOption {
 	}
 }
 
-func WithAnthropicOptions(anthropicOptions ...AnthropicOption) ProviderClientOption {
-	return func(options *providerClientOptions) {
-		options.anthropicOptions = anthropicOptions
-	}
-}
-
 func WithOpenAIOptions(openaiOptions ...OpenAIOption) ProviderClientOption {
 	return func(options *providerClientOptions) {
 		options.openaiOptions = openaiOptions
 	}
 }
 
-func WithGeminiOptions(geminiOptions ...GeminiOption) ProviderClientOption {
+func WithInfineonOptions(infineonOptions ...InfineonOption) ProviderClientOption {
 	return func(options *providerClientOptions) {
-		options.geminiOptions = geminiOptions
-	}
-}
-
-func WithBedrockOptions(bedrockOptions ...BedrockOption) ProviderClientOption {
-	return func(options *providerClientOptions) {
-		options.bedrockOptions = bedrockOptions
-	}
-}
-
-func WithCopilotOptions(copilotOptions ...CopilotOption) ProviderClientOption {
-	return func(options *providerClientOptions) {
-		options.copilotOptions = copilotOptions
+		options.infineonOptions = infineonOptions
 	}
 }

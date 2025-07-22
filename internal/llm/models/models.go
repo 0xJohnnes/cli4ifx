@@ -22,77 +22,22 @@ type Model struct {
 	SupportsAttachments bool          `json:"supports_attachments"`
 }
 
-// Model IDs
-const ( // GEMINI
-	// Bedrock
-	BedrockClaude37Sonnet ModelID = "bedrock.claude-3.7-sonnet"
-)
-
 const (
-	ProviderBedrock ModelProvider = "bedrock"
+	ProviderOpenAI    ModelProvider = "openai"
+	ProviderInfineon  ModelProvider = "infineon"
 	// ForTests
-	ProviderMock ModelProvider = "__mock"
+	ProviderMock      ModelProvider = "__mock"
 )
 
 // Providers in order of popularity
 var ProviderPopularity = map[ModelProvider]int{
-	ProviderCopilot:    1,
-	ProviderAnthropic:  2,
-	ProviderOpenAI:     3,
-	ProviderGemini:     4,
-	ProviderGROQ:       5,
-	ProviderOpenRouter: 6,
-	ProviderBedrock:    7,
-	ProviderAzure:      8,
-	ProviderVertexAI:   9,
+	ProviderInfineon: 1,
+	ProviderOpenAI:   2,
 }
 
-var SupportedModels = map[ModelID]Model{
-	//
-	// // GEMINI
-	// GEMINI25: {
-	// 	ID:                 GEMINI25,
-	// 	Name:               "Gemini 2.5 Pro",
-	// 	Provider:           ProviderGemini,
-	// 	APIModel:           "gemini-2.5-pro-exp-03-25",
-	// 	CostPer1MIn:        0,
-	// 	CostPer1MInCached:  0,
-	// 	CostPer1MOutCached: 0,
-	// 	CostPer1MOut:       0,
-	// },
-	//
-	// GRMINI20Flash: {
-	// 	ID:                 GRMINI20Flash,
-	// 	Name:               "Gemini 2.0 Flash",
-	// 	Provider:           ProviderGemini,
-	// 	APIModel:           "gemini-2.0-flash",
-	// 	CostPer1MIn:        0.1,
-	// 	CostPer1MInCached:  0,
-	// 	CostPer1MOutCached: 0.025,
-	// 	CostPer1MOut:       0.4,
-	// },
-	//
-	// // Bedrock
-	BedrockClaude37Sonnet: {
-		ID:                 BedrockClaude37Sonnet,
-		Name:               "Bedrock: Claude 3.7 Sonnet",
-		Provider:           ProviderBedrock,
-		APIModel:           "anthropic.claude-3-7-sonnet-20250219-v1:0",
-		CostPer1MIn:        3.0,
-		CostPer1MInCached:  3.75,
-		CostPer1MOutCached: 0.30,
-		CostPer1MOut:       15.0,
-	},
-}
+var SupportedModels = map[ModelID]Model{}
 
 func init() {
-	maps.Copy(SupportedModels, AnthropicModels)
+	maps.Copy(SupportedModels, InfineonModels)
 	maps.Copy(SupportedModels, OpenAIModels)
-	maps.Copy(SupportedModels, GeminiModels)
-	maps.Copy(SupportedModels, GroqModels)
-	maps.Copy(SupportedModels, AzureModels)
-	maps.Copy(SupportedModels, OpenRouterModels)
-	maps.Copy(SupportedModels, XAIModels)
-	maps.Copy(SupportedModels, VertexAIGeminiModels)
-	maps.Copy(SupportedModels, CopilotModels)
 }
